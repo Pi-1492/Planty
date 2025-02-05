@@ -1,0 +1,22 @@
+[05-Feb-2025 06:44:17 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[05-Feb-2025 06:44:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory_url() in C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-content\themes\Elementor Child\functions.php:8
+Stack trace:
+#0 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\class-wp-hook.php(324): theme_enqueue_styles('')
+#1 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\script-loader.php(2272): do_action('wp_enqueue_scri...')
+#4 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#5 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\general-template.php(3064): do_action('wp_head')
+#8 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-content\themes\hello-elementor\header.php(23): wp_head()
+#9 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\template.php(810): require_once('C:\\Users\\PiRog\\...')
+#10 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\template.php(745): load_template('C:\\Users\\PiRog\\...', true, Array)
+#11 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-content\themes\hello-elementor\index.php(14): get_header()
+#13 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\PiRog\\...')
+#14 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-blog-header.php(19): require_once('C:\\Users\\PiRog\\...')
+#15 C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\index.php(17): require('C:\\Users\\PiRog\\...')
+#16 {main}
+  thrown in C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-content\themes\Elementor Child\functions.php on line 8
+[05-Feb-2025 06:45:01 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\PiRog\Desktop\FORMATION\Wordpress\Planty\app\public\wp-includes\class-wp-customize-widgets.php on line 923
