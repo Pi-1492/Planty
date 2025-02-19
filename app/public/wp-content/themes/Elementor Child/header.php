@@ -22,12 +22,8 @@
 
 
 <?php
-if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-	if ( hello_elementor_display_header_footer() ) {
-		if ( did_action( 'elementor/loaded' ) && hello_header_footer_experiment_active() ) {
-			get_template_part( 'template-parts/dynamic-header' );
-		} else {
-			get_template_part( 'template-parts/header' );
-		}
-	}
-}
+$menu_args = [
+	'theme_location' => 'menu-1',
+];
+$header_nav_menu = wp_nav_menu( $menu_args );
+?>
