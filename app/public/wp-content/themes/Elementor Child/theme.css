@@ -36,7 +36,11 @@
 }
 /* class specifique au formulaire "commander" */
 /* Mise en forme de la page*/
-
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
 .selection{
     display:flex;
     flex-direction: row;
