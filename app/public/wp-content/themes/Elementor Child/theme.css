@@ -1,7 +1,7 @@
 /* ensemble des classe permettant de modifier l'aspect du thème par défaut */
 
 
-/* Class modifiant les éléments du formulaire généré par le plugin contact form 7 */
+/* Class modifiant les éléments du formulaire généré par le plugin contact form 7 général*/
 .wpcf7 input,
 .wpcf7 label,
 .wpcf7 textarea{
@@ -11,6 +11,7 @@
 	line-height:30px;
 	border-radius: 5px;
 	border:none;
+    border-color:transparent;
 	width: 383px;
 
 }
@@ -33,6 +34,48 @@
 	background-color:#C02E44;
 	cursor: pointer;
 }
+/* class specifique au formulaire "commander" */
+/* Mise en forme de la page*/
+
+.selection{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.premiere{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.seconde{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.wpcf7 .quantite{
+    font-size: 15px;
+    font-weight: 400;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:5%;
+}
+.wpcf7 .T_Info{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+.wpcf7 .info{
+    color: #C02E44;
+    font-weight: 400;
+    font-size: 20px;
+}
 
 /* Class modifiant l'aspect du Menu Header */
 
@@ -43,16 +86,22 @@
     gap: 20px;
     min-height: 80px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    
 }
 
 .rencontrer, .commander {
     font-family: Syne;
     font-size: 20px;
     font-weight: 400;
+    
 } 
 .rencontrer {
-    color: #000000;
+   
+    display: flex;
+    justify-content: right;
+    width: 1300px;
+    
 }
 .commander {
     display: flex;
@@ -60,9 +109,23 @@
     min-height: 80px;
     justify-content: center;
     align-items: center;
-    color:#FFFFFF;
-    background-color: #DC9F96;
+    
+    background-color:#E0B9B4;
+    
 }
 .commander:hover{
     background-color: #C02E44;
+}
+.accueil {
+    display: flex;
+    min-height: 80px;
+    min-width: 236px;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
 }
