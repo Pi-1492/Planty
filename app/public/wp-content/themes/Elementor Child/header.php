@@ -21,9 +21,12 @@
 <?php wp_body_open(); ?>
 
 
+<div class="Header_Container">
+<a href="/accueil" title="Accueil">  <img alt="logo du site planty" src="/wp-content/themes/Elementor Child/Logo.png"/></a>
 <?php
 $menu_args = [
 	'theme_location' => 'menu-1',
 ];
 $header_nav_menu = wp_nav_menu( $menu_args );
 ?>
+</div>

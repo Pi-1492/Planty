@@ -18,3 +18,29 @@ function wpb_menu()
     register_nav_menus( [ 'menu-2' => esc_html__( 'Footer', 'child-elementor' ) ] );
 }
 add_action('init', 'wpb_menu');
+
+function add_admin_menu($items, $args)
+{
+    
+
+    if ( is_user_logged_in() && $args->menu->name=='Header'){
+        $admin_url=admin_url();
+        $Menu=explode('li',$items);
+        $Menu[2]="</li>"."<li>"."<a class=\"admin\" href=\"$admin_url\">Admin</a>"."</li>"."<";
+        $items=implode('li',$Menu);
+        return $items;
+                
+       
+       
+
+        /* explode fonction php qui va permettre de couper une chaine de caracter en tableau en fonction d'une chaine de caractere ici li
+        inserer en suite dans le tableau une nouvelle balise li avec le lien vers le menu admin
+        et operation inverse avec implode
+        et enfin on retourne (return $items) sachant que items sera la reconstruction avec implode */
+    }
+    else{
+        return $items;
+    }
+}
+
+add_filter('wp_nav_menu_items', 'add_admin_menu', 10, 2);

@@ -2,17 +2,18 @@
 
 
 /* Class modifiant les éléments du formulaire généré par le plugin contact form 7 général*/
-.wpcf7 input,
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
 .wpcf7 label,
 .wpcf7 textarea{
 	color: #000000;
 	font-family:syne;
 	font-size:20px;
 	line-height:30px;
-	border-radius: 5px;
+	border-radius: 10px;
 	border:none;
-    border-color:transparent;
-	width: 383px;
+    border-color:#FFFFFF;
+	
 
 }
 
@@ -20,7 +21,7 @@
 .wpcf7 input[type="submit"]{
 	background-color:#E0B9B4;
 	width:50%;
-	border-radius:5px;
+	border-radius:10px;
 	border:none;
 	font-size:15px;
 	color:#FFFFFF;
@@ -46,26 +47,37 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
+    margin-bottom: 5%;
+}
+.horizontal{
+    border-top: 1px solid #FFFFFF;
 }
 .information{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .premiere{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
+}
+.vertical{
+    border-left: 1px solid #FFFFFF;
 }
 .seconde{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
 }
 .wpcf7 .quantite{
     font-size: 15px;
     font-weight: 400;
     align-content: center;
+    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     width:5%;
@@ -76,13 +88,34 @@
     font-size: 20px;
 }
 .wpcf7 .info{
-    color: #C02E44;
-    font-weight: 400;
+    color: #000000;
+    font-weight: 300;
     font-size: 20px;
+    border-radius:10px;
+	border:none;
+    min-height: 60px;
+}
+.wpcf7 .titre{
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 30;
+
+}
+.wpcf7 .bouton{
+    max-width:200px;
 }
 
 /* Class modifiant l'aspect du Menu Header */
 
+.Header_Container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    padding-left: 20px;
+}
 .menu {
     display: flex;
     margin: 0px;
@@ -90,35 +123,39 @@
     gap: 20px;
     min-height: 80px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    list-style: none;
     
 }
 
-.rencontrer, .commander {
+.rencontrer, .commander, .admin{
     font-family: Syne;
     font-size: 20px;
     font-weight: 400;
+    color: #000000;
     
 } 
-.rencontrer {
+.rencontrer a {
    
     display: flex;
     justify-content: right;
-    width: 1300px;
-    
+    color: #000000;
+       
 }
-.commander {
+
+.commander a {
     display: flex;
     min-width: 236px;
     min-height: 80px;
     justify-content: center;
     align-items: center;
-    
+    color: #FFFFFF;
     background-color:#E0B9B4;
     
 }
-.commander:hover{
+.commander a:hover{
     background-color: #C02E44;
+    color: #FFFFFF;
 }
 .accueil {
     display: flex;
