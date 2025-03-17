@@ -12,7 +12,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
+	
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
@@ -22,7 +22,7 @@
 
 
 <div class="Header_Container">
-<a href="/accueil" title="Accueil">  <img alt="logo du site planty" src="/wp-content/themes/Elementor Child/Logo.png"/></a>
+<a href="/accueil" title="Accueil">  <img alt="logo du site planty" src="/wp-content/themes/Elementor_Child/Logo.png"/></a>
 <?php
 $menu_args = [
 	'theme_location' => 'menu-1',

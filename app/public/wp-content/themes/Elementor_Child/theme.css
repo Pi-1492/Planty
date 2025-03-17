@@ -98,7 +98,7 @@
 .wpcf7 .titre{
     color:#FFFFFF;
     font-weight: 700;
-    font-size: 30;
+    font-size: 30px;
 
 }
 .wpcf7 .bouton{
@@ -152,6 +152,9 @@
     color: #FFFFFF;
     background-color:#E0B9B4;
     
+}
+.admin a{
+    color: black;
 }
 .commander a:hover{
     background-color: #C02E44;
