@@ -22,7 +22,7 @@
 
 
 <div class="Header_Container">
-<a href="/accueil" title="Accueil">  <img alt="logo du site planty" src="/wp-content/themes/Elementor_Child/Logo.png"/></a>
+<a href="/accueil" title="Accueil">  <img class="accueil" alt="logo du site planty" src="/wp-content/themes/Elementor_Child/Logo.png"/></a>
 <?php
 $menu_args = [
 	'theme_location' => 'menu-1',

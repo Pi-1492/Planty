@@ -160,16 +160,108 @@
     background-color: #C02E44;
     color: #FFFFFF;
 }
-.accueil {
-    display: flex;
-    min-height: 80px;
-    min-width: 236px;
-    align-items: center;
-    justify-content: center;
-    
-    background-image: url('Logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
+/* partie qui permet d'adapter le comportement de la misen en forme en fonction de la largeur d'écran */
+
+/*pour la tablette entre 650 et 950 px */
+@media screen and (min-width: 650px) and (max-width: 900px) {
    
+    .wpcf7 .quantite{
+        font-size: 12px;
+        font-weight: 400;
+        align-content: center;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 9%;
+        width:5%;
+    }
+
+
+
+    .rencontrer, .commander, .admin{
+        font-family: Syne;
+        font-size: 14px;
+        font-weight: 400;
+        color: #000000;
+        
+    } 
+
+    .accueil{
+        max-width: 70%;       
+    }
+}
+/*pour les mobiles entre 320 et 649 px */
+
+@media screen and (min-width: 320px) and (max-width: 649px) {
+    .rencontrer, .commander, .admin{
+        font-family: Syne;
+        font-size: 12px;
+        font-weight: 400;
+        color: #000000;
+        
+    } 
+    .Header_Container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-shrink: 1;
+        padding-left: 20px;
+    }
+    .menu {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        gap: 10px;
+        min-height: 40px;
+        align-items: center;
+        justify-content: flex-start;
+        list-style: none;
+        
+    }
+    .commander a {
+        display: flex;
+        min-width: 100px;
+        min-height: 40px;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        background-color:#E0B9B4;
+        
+    }
+    .accueil{
+        max-width: 70%;       
+    }
+
+    .wpcf7 .quantite{
+        font-size: 12px;
+        font-weight: 400;
+        align-content: center;
+        text-align: center;
+        margin-left: 7%;
+        margin-right: 6%;
+        width:5%;
+    }
+    .wpcf7 .T_Info{
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .wpcf7 .info{
+        color: #000000;
+        font-weight: 300;
+        font-size: 12px;
+        border-radius:10px;
+        border:none;
+        min-height: 60px;
+    }
+    .wpcf7 .titre{
+        color:#FFFFFF;
+        font-weight: 600;
+        font-size: 19px;
     
+    }
+    .wpcf7 .bouton{
+        max-width:200px;
+    }
 }
