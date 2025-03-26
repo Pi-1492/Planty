@@ -25,9 +25,9 @@ function add_admin_menu($items, $args)
 
     if ( is_user_logged_in() && $args->menu->name=='Header'){
         $admin_url='<li class="admin"><a href="'.admin_url().'">Admin</a>';
-        $Menu=explode('</li>',$items);
-        array_splice($Menu, 1,0, $admin_url);
-        $items=implode('</li>', $Menu);
+        $menu=explode('</li>',$items);
+        array_splice($menu, 1,0, $admin_url);
+        $items=implode('</li>', $menu);
         
         /*$Menu[2]='><li><a class="admin" href="'.$admin_url.'">Admin</a>';
         $items=implode('/li',$Menu);*/
