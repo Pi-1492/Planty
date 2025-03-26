@@ -1,6 +1,6 @@
 <?php
 
-/*  a quel moment la fonction doit etre appele wp_enqueue_script, et quel fonciton doit etre appele theme_enqueue_style */
+/*  a quel moment la fonction doit etre appele wp_enqueue_script, et quel fonction doit etre appele theme_enqueue_style */
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
@@ -31,8 +31,8 @@ function add_admin_menu($items, $args)
         
         /*$Menu[2]='><li><a class="admin" href="'.$admin_url.'">Admin</a>';
         $items=implode('/li',$Menu);*/
-        /* explode fonction php qui va permettre de couper une chaine de caracter en tableau en fonction d'une chaine de caractere ici li
-        inserer en suite dans le tableau une nouvelle balise li avec le lien vers le menu admin
+        /* explode fonction php qui va permettre de couper une chaine de caractere en tableau en fonction d'une chaine de caractere ici li
+        inserer ensuite dans le tableau une nouvelle balise li avec le lien vers le menu admin
         et operation inverse avec implode
         et enfin on retourne (return $items) sachant que items sera la reconstruction avec implode */
     }
